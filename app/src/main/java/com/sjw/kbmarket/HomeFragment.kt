@@ -20,7 +20,6 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        // Access productList from MainActivity
         val productList = (activity as MainActivity).productList
         val productAdapter = ProductAdapter(productList)
 
